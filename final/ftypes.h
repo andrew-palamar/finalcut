@@ -52,7 +52,8 @@
   #define USE_POSIX_TIMER
 #endif
 
-#define null nullptr
+// This breaks compilation of nlohmann_json::nlohmann_json for me
+// #define null nullptr
 
 #define badAllocOutput(object_name)              \
     std::clog << FLog::LogLevel::Error           \
