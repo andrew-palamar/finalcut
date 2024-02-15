@@ -88,7 +88,7 @@ else()
 endif(F_COMPILE_STATIC)
 
 target_include_directories(finalcut PRIVATE .)
-target_link_libraries(finalcut PRIVATE ncurses gpm)
+target_link_libraries(finalcut PRIVATE ncurses rt gpm)
 
 #
 # # example sources
